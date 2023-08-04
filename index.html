@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--! BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <!--! FONT AWESOME -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Neos Yazılım</title>
+    <!--! External CSS -->
+    <style>
+      body {
+        background: radial-gradient(circle, #000 0, #323232 100%);
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      .nav-link {
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      .act {
+        color: #2596be;
+      }
+      .act:hover {
+        color: #2596be;
+      }
+      .act1:hover {
+        color: #2596be !important;
+      }
+      @media screen and (max-width: 776px) {
+        .navbar .dropdown {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          align-items: end;
+        }
+      }
+      .h1,
+      .h2 {
+        font-size: 26px;
+      }
+      .myheading {
+        font-weight: 600;
+        text-transform: capitalize !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--! header start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 h-50">
+      <div class="container-xl">
+        <a class="navbar-brand d-block" href="#">
+          <img src="img/neosLogo2.png" style="max-width: 150px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse text-md-start text-end justify-content-end collapse show"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item ms-1">
+              <a class="nav-link act" aria-current="page" href="#">ANASAYFA</a>
+            </li>
+            <div class="dropdown menu-drop">
+              <button
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HAKKIMIZDA
+              </button>
+              <ul class="dropdown-menu menu-dropdown-menu bg-black">
+                <li>
+                  <a class="dropdown-item act1 text-white" href="#">KADROMUZ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item act1 text-white" href="#">HABERLER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item act1 text-white" href="#">GALERİ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item act1 text-white" href="#"
+                    >BAŞARILAR</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link act1 text-white" href="#">YORUMLAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link act1 text-white" href="#">SERTİFİKALAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link act1 text-white" href="#">İLETİŞİM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link act1 text-white" href="#">BANA ÖZEL</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--! header end -->
+    <!--! slider start -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/devam_ediyor_2000__1000_piksel_1_1.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/huge_2000__1000_piksel_3_2.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="img/mezun_etk_buyuk.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--! slider end -->
+    <!--! section desc start -->
+    <div class="container-xl mt-md md-3 mt-3 px-5">
+      <div id="tabs">
+        <div class="row">
+          <div class="col-12 p-0">
+            <div class="tab-contents tab-contents-index pt-2">
+              <h1 class="text-white h1 myheading">Yazılım Uzmanlığı</h1>
+              <h2 class="text-white h2 myheading">
+                Yüz Yüze Yazılım Eğitimi ve Online Yazılım Kursu Hakkında
+              </h2>
+              <p class="text-white">
+                Binlerce başarılı mezunu ve dünya genelinde az bulunur
+                niteliklere sahip uzman kadrosuyla
+                <a
+                  href="https://onedio.com/haber/en-iyi-yazilim-akademisi-odulunun-sahibi-neos-yazilim-oldu-1111093"
+                  target="_blank"
+                  >”Türkiye’nin En İyi Yazılım Akademisi”</a
+                >
+                ödülünün sahibi Neos Yazılım Akademi; İstanbul, Ankara, İzmir ve
+                Bursa şubelerinde
+                <strong>yüz yüze yazılım eğitimleri</strong> ve dünyanın her
+                yerindeki katılımcıları için
+                <strong> online yazılım kursları </strong>
+                sunmaktadır. Dev kadrosu ve uzman yönetim kurulu ile Alman
+                kalite standartlarında faaliyet gösteren Neos Yazılım Akademi
+                uluslararası ISO 9001 Kalite Belgesi'ne sahip tek yazılım
+                akademisidir. Türkiye’de “yazılım akademisi” konseptiyle
+                faaliyet gösteren ilk kurum olmasının yanı sıra,
+                <a
+                  href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LDI3LcvIMzQ1YLRSNagwNElOTEoxNjNMsUwzSkpOsQIKGVgmpySaGSabWKSaJJmbefHlpeYXK1QmVh3ZmHNkYy4Axd4WdA&q=neos+yaz%C4%B1l%C4%B1m&oq=ne&aqs=chrome.1.69i60j46i39i175i199j69i57j69i59j69i60l4.1141j0j4&sourceid=chrome&ie=UTF-8#lrd=0x14cabd361d9f2bcd:0x109cda61c48e4b76,1,,,,"
+                  target="_blank"
+                  >öğrencilerinin yorumuyla</a
+                >
+                “en kaliteli, en güvenilir” <strong>yazılım eğitimi</strong>
+                kurumu olarak nitelendirilmektedir. Eğitimlerimiz hakkında;
+                kontenjan, katılım ücreti, sertifika ve tarih bilgilerini web
+                sitemizden inceleyebilir, daha sonra kayıt olmayı düşündüğünüz
+                eğitim grubunun kontenjanı dolmadan önce bildirim almak için
+                hatırlatma ikonunu kullanabilirsiniz. Yazılım uzmanı
+                <a href="https://neosyazilim.com/hakkimizda/"
+                  >eğitmen kadromuzu</a
+                >","
+                <a href="https://neosyazilim.com/iletisim/"
+                  >şube lokasyonlarımızı</a
+                >
+                ","
+                <a href="https://neosyazilim.com/yorumlar/"
+                  >öğrencilerimizin yorumlarını</a
+                >
+                (4,9/5),
+                <a href="https://www.youtube.com/watch?v=0-aHdIqXQyI"
+                  >öğrencilerimizin videolu yorumlarını</a
+                >
+                ","
+                <a href="https://neosyazilim.com/belgelendirme/"
+                  >şubelerimize ait görsel içerikleri</a
+                >
+                " web sitemizden inceleyebilirsiniz."
+              </p>
+              <p class="text-white">
+                Seçtiğiniz yazılım uzmanlığı eğitim programına bağlı olarak,
+                seçkin eğitmenlerden oluşan dev
+                <a href="https://neosyazilim.com/hakkimizda/">kadromuz</a>
+                sayesinde eksiksiz sunduğumuz; C#, .NET, Python, Django, Node
+                JS, Vanilla JS, jQuery, Bootstrap, HTML, CSS, Sass gibi yazılım
+                ve web geliştirmenin en önemli konularında uzmanlaşabilirsiniz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! section desc end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
