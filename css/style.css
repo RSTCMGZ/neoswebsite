@@ -27,6 +27,26 @@ p {
     align-items: end;
   }
 }
+
+/*! webshow start */
+.webshow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 5%;
+  z-index: 9999999;
+  background-color: rgba(128, 128, 128, 0.821);
+  border-radius: 5px;
+}
+
+.webshow img {
+  width: 30px;
+}
+/*! webshow end */
 .h1,
 .h2 {
   font-size: 26px;
@@ -46,12 +66,15 @@ p {
 .info {
   background-color: #cff4fc;
 }
-ul {
+.dropdown-menu li {
   list-style: none;
 }
 .product-star {
   color: gold !important;
   font-size: 15px;
+}
+.product-star li {
+  list-style-type: none;
 }
 
 .product-wrapper .corousel {
@@ -60,7 +83,7 @@ ul {
   overflow: hidden;
 }
 .corousel .card {
-  height: 200px;
+  width: 200px !important;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -74,7 +97,7 @@ ul {
 
 .product-wrapper .glide__arrow {
   position: absolute;
-  top: 50%;
+  top: 30%;
   background-color: transparent !important;
   color: #fff;
   border: none;
@@ -97,3 +120,85 @@ ul {
   margin: 0 20px;
   background-color: #fff;
 }
+/*! question start*/
+.faq {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.question {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.question h3 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+.answer p {
+  padding-top: 1rem;
+  color: #b9b9b9;
+  font-size: 16px;
+}
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+.faq.active svg {
+  transform: rotate(180deg) !important;
+}
+.myheading {
+  font-size: 20px !important;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*! question end*/
+/*! footer start*/
+footer {
+  padding: 40px 0 !important;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  margin: 8px 0;
+  padding: 0;
+}
+footer ul li a:hover {
+  color: #b9b9b9 !important;
+}
+footer ul li span:hover {
+  color: #b9b9b9 !important;
+}
+.bi-telephone,
+.bi-envelope {
+  font-size: 0.9rem;
+  color: #add8e6;
+}
+
+footer .a {
+  text-decoration: none;
+}
+footer h3 {
+  font-size: 18px !important;
+  color: #fff !important;
+}
+footer h4 {
+  font-size: 16px !important;
+  color: #fff !important;
+}
+/*! footer end*/
